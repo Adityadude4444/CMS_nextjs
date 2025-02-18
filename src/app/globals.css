@@ -5,6 +5,35 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+/* Enable scrolling */
+html,
+body {
+  overflow: auto;
+}
+
+/* Custom scrollbar for dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e; /* Dark track */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555; /* Darker scrollbar */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #888; /* Lighten on hover */
+}
+
+/* Make sure sections don’t overflow */
+section {
+  overflow: hidden;
+}
 
 @layer base {
   :root {
@@ -84,5 +113,6 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+    @apply bg-black text-white;
   }
 }

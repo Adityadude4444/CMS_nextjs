@@ -15,7 +15,7 @@ export default function Home() {
             StreamLine your content workflow, with a single platform.
           </p>
           <div>
-            <Link href="/blogs">
+            <Link href="/signin">
               <Button variant={"default"} size={"lg"}>
                 Get Started
               </Button>

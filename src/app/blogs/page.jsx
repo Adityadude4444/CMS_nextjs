@@ -29,18 +29,20 @@ const blogsdata = [
 
 const Blogs = () => {
   return (
-    <section className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4">
-      {blogsdata.map((blog, index) => {
-        return (
-          <Blogcard
-            key={index}
-            title={blog.title}
-            description={blog.description}
-            image={blog.image}
-          />
-        );
-      })}
-    </section>
+    <main className="h-screen">
+      <section className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4">
+        {blogsdata.map((blog, index) => {
+          return (
+            <Blogcard
+              key={index}
+              title={blog.title}
+              description={blog.description}
+              image={blog.image}
+            />
+          );
+        })}
+      </section>
+    </main>
   );
 };
 
